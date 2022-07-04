@@ -1,0 +1,420 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.divBiografia2 .divExpo {
+  width: 90vw;
+  min-height: 800px;
+  font-size: 20px; }
+
+.body {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+  grid-template-columns: auto 1fr 1fr 1fr auto;
+  min-height: 100vh;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header header header header" "main main main main main" "main main main main main" "main main main main main" "footer footer footer footer footer"; }
+
+.mainSecciones {
+  margin-left: 40px;
+  margin-right: 40px; }
+
+h1 {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Volkhov", serif; }
+
+h2 {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Volkhov", serif; }
+
+p {
+  font-family: "Volkhov", serif; }
+
+li {
+  font-family: "Volkhov", serif; }
+
+.divBiografia2 .divExpo {
+  width: 90vw;
+  min-height: 800px;
+  font-size: 20px; }
+
+.divBiografia1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid grey; }
+  .divBiografia1 .imgBio1 {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%; }
+  .divBiografia1 .pBio1 {
+    display: flex;
+    width: 600px;
+    align-items: center;
+    text-align: justify;
+    font-size: 30px;
+    font-style: oblique; }
+
+.divBiografia2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4rem;
+  align-content: center; }
+  .divBiografia2 .divExpo p {
+    margin: 1rem 0;
+    font-family: "Volkhov", serif;
+    color: black; }
+  .divBiografia2 .imgExpo {
+    width: 90vw;
+    margin: 3rem 0; }
+  .divBiografia2 .exposiciones {
+    margin-bottom: 2rem; }
+  .divBiografia2 .pExpo {
+    font-size: 25px; }
+
+.mainindex {
+  background-image: url("../img/dana-devolk-ep44pTTTAjE-unsplash.jpg"); }
+
+.main {
+  grid-area: main;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background-size: cover;
+  /* Dividimos el main en 3 filas */
+  /* Aplicamos estilo a cada imagen */ }
+  .main .imagenesNavegables {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+  .main .div1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .main .div2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .main .div3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .main .figura {
+    display: flex;
+    height: 275px;
+    width: 300px;
+    box-shadow: 0 15px 25px grey;
+    position: relative;
+    animation-duration: 0.75s; }
+  .main .link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    border-radius: 5px; }
+    .main .link:hover {
+      transform: scale(1.1); }
+    .main .link:hover .capa {
+      opacity: 1;
+      visibility: visible;
+      background: rgba(0, 0, 0, 0.4); }
+    .main .link:hover .tituloImagen {
+      color: white;
+      text-shadow: 0 0 10px white, 0 0 20px white;
+      transition-duration: 0.5s;
+      transform: scale(1.1); }
+  .main .tituloImagen {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 2.5rem;
+    font-family: 'Volkhov', serif; }
+  .main .capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 500ms ease-out;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold; }
+  .main .divCelular {
+    display: none; }
+
+.mainCuentos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.primerosCuentos {
+  max-width: 35%;
+  min-width: 35%;
+  max-height: 750px;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid 1px grey;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.25s;
+  border-radius: 4px;
+  margin-bottom: 4rem; }
+  .primerosCuentos:hover {
+    box-shadow: 0px 10px 15px grey;
+    color: black; }
+
+.pCuento {
+  border-top: solid 1px black;
+  padding-top: 15px;
+  margin-top: 5px;
+  text-align: center; }
+
+.imgCuento1 {
+  width: 265px;
+  max-height: 350px;
+  min-height: 350px; }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden; }
+
+.divPinturas {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .divPinturas .PrimerasPinturas {
+    width: 45%;
+    margin: 1rem 0.5rem;
+    animation-duration: 0.75s; }
+
+.divExposicion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center; }
+  .divExposicion .ulExpo {
+    width: 45%;
+    font-family: "Volkhov", serif;
+    margin-bottom: 3rem;
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #e4e4e4; }
+    .divExposicion .ulExpo li {
+      margin: 2rem 2rem;
+      font-size: 20px; }
+
+.Contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .Contacto .formItem {
+    margin-bottom: 1.5rem;
+    width: 30%;
+    padding: 10px; }
+  .Contacto div {
+    display: flex;
+    justify-content: space-around; }
+    .Contacto div input {
+      width: 150px; }
+
+.header {
+  grid-area: header;
+  background-color: #7c7c7c; }
+  .header .divHeader {
+    display: flex;
+    background-color: #ececec;
+    justify-content: space-between;
+    box-shadow: 0 1px 10px grey;
+    position: relative;
+    align-items: center; }
+  .header .imgLogo {
+    width: 170px;
+    height: 90px;
+    margin-left: 25px; }
+  .header .menuPrincipal {
+    display: flex;
+    align-items: center;
+    font-family: 'Volkhov', serif;
+    color: black;
+    justify-content: space-between; }
+    .header .menuPrincipal a {
+      padding: 0px 30px;
+      text-decoration: none;
+      text-align: center; }
+  .header .menuDesplegable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem; }
+    .header .menuDesplegable .menuItem {
+      text-decoration: none;
+      color: black;
+      padding: 25px 0;
+      font-weight: bold;
+      border-bottom: 1px solid black;
+      text-align: center;
+      font-family: sans-serif; }
+
+.footer {
+  grid-area: footer;
+  background-color: #ececec;
+  border: 1px solid grey;
+  bottom: 0; }
+  .footer .redes-sociales {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 25px;
+    font-size: 30px;
+    text-decoration: none; }
+    .footer .redes-sociales li {
+      margin-left: 50px;
+      margin-right: 50px; }
+      .footer .redes-sociales li i {
+        color: black; }
+      .footer .redes-sociales li:hover i {
+        transform: scale(1.3); }
+
+@media (max-width: 768px) {
+  .menuPrincipal {
+    display: none; }
+  .imgLogo {
+    margin: 0; }
+  .imagenesNavegables {
+    flex-direction: column; }
+    .imagenesNavegables .div1 {
+      display: none; }
+    .imagenesNavegables .div2 {
+      display: none; }
+    .imagenesNavegables .div3 {
+      display: none; }
+    .imagenesNavegables .divCelular {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100vw;
+      justify-content: space-between;
+      height: 1450px; }
+      .imagenesNavegables .divCelular .figura {
+        height: 220px;
+        width: 70vw; }
+        .imagenesNavegables .divCelular .figura .capa {
+          visibility: visible;
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.4);
+          animation: none; }
+          .imagenesNavegables .divCelular .figura .capa p {
+            display: none; }
+        .imagenesNavegables .divCelular .figura .tituloImagen {
+          font-size: 35px;
+          color: white;
+          text-shadow: 0 0 10px white;
+          top: 0;
+          display: flex;
+          align-items: center;
+          margin-top: 0;
+          animation: none; }
+        .imagenesNavegables .divCelular .figura .link {
+          animation: none; }
+  .divBiografia1 .imgBio1 {
+    padding-bottom: 2rem;
+    width: 200px;
+    height: 250px; }
+  .divBiografia1 .pBio1 {
+    font-size: 20px; }
+  .divExpo {
+    font-size: 18px; }
+    .divExpo .exposiciones li {
+      font-size: 18px; }
+    .divExpo .pExpo {
+      font-size: 18px; }
+  .divPinturas {
+    flex-direction: column; }
+    .divPinturas .PrimerasPinturas {
+      width: 90%;
+      animation: none; }
+  .tituloPinturas {
+    font-size: medium;
+    margin-bottom: 1rem; }
+  .mainCuentos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .primerosCuentos {
+    max-width: 90%;
+    min-width: 90%;
+    max-height: 600px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 1px grey;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.25s;
+    border-radius: 4px;
+    margin-bottom: 4rem;
+    animation: none; }
+  .pCuento {
+    border-top: solid 1px black;
+    padding-top: 15px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: small; }
+  .imgCuento1 {
+    width: 165px;
+    max-height: 250px;
+    min-height: 250px; }
+  .hidden {
+    display: none; }
+  .divExposicion {
+    flex-direction: column; }
+    .divExposicion .ulExpo {
+      width: 90%;
+      font-size: 30px; }
+      .divExposicion .ulExpo li {
+        font-size: 20px; } }
