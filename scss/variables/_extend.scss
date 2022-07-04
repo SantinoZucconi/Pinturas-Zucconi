@@ -1,0 +1,10 @@
+@mixin fuenteParrafo($fuente1, $colorletra){
+    font-family: $fuente1;
+    color: $colorletra;
+}
+
+%estilosParrafos{
+    width: 90vw;
+    min-height: 800px;
+    font-size: 20px;
+}

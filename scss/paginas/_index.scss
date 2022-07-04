@@ -1,0 +1,114 @@
+.mainindex {
+    background-image: url("../img/dana-devolk-ep44pTTTAjE-unsplash.jpg");
+}
+
+.main {
+    grid-area: main;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-size: cover;
+
+    .imagenesNavegables {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    /* Dividimos el main en 3 filas */
+
+
+    .div1 {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .div2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .div3 {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    /* Aplicamos estilo a cada imagen */
+
+    .figura {
+        display: flex;
+        height: 275px;
+        width: 300px;
+        box-shadow: 0 15px 25px grey;
+        position: relative;
+        animation-duration: 0.75s;
+    }
+
+    .link {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+        border-radius: 5px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:hover .capa {
+            opacity: 1;
+            visibility: visible;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        &:hover .tituloImagen {
+            color: white;
+            text-shadow: 0 0 10px white,
+                0 0 20px white;
+            transition-duration: 0.5s;
+            transform: scale(1.1);
+        }
+    }
+
+    .tituloImagen {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 2.5rem;
+        font-family: 'Volkhov', serif;
+    }
+
+    .capa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 500ms ease-out;
+        visibility: hidden;
+        opacity: 0;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .divCelular {
+        display: none;
+    }
+}

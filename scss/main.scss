@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import "./variables/extend";
+@import "./variables/fuentes";
+@import "./variables/colores";
+
+@import "./secciones/body";
+@import "./paginas/biografia";
+@import "./paginas/index";
+@import "./paginas/cuentos";
+@import "./paginas/pinturas";
+@import "./paginas/exposiciones";
+@import "./paginas/contacto";
+
+@import "./secciones/header";
+@import "./secciones/footer";
+
+@media(max-width: 768px){
+
+    .menuPrincipal{
+        display: none;
+    }
+
+    .imgLogo{
+        margin: 0;
+    }
+
+    .imagenesNavegables{
+        flex-direction: column;
+
+        .div1{
+            display: none;
+        }
+        .div2{
+            display: none;
+        }
+        .div3{
+            display: none;
+        }
+
+        .divCelular{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100vw;
+            justify-content: space-between;
+            height: 1450px;
+    
+            .figura{
+                height: 220px;
+                width: 70vw;
+    
+                .capa{
+                    visibility: visible;
+                    opacity: 1;
+                    background: rgba(0, 0, 0, 0.4);
+                    animation: none;
+                    p{
+                        display: none;
+                    }
+                }
+                .tituloImagen{
+                    font-size: 35px;
+                    color: white;
+                    text-shadow: 0 0 10px white;
+                    top: 0;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 0;
+                    animation: none;
+                }
+                .link{
+                    animation: none;
+                }
+            }
+        }
+    }
+
+    .divBiografia1{
+
+        .imgBio1{
+            padding-bottom: 2rem;
+            width: 200px;
+            height: 250px;
+        }
+    
+        .pBio1{
+            font-size: 20px;
+        }
+
+    }
+
+    .divExpo{
+
+        font-size: 18px;
+        .exposiciones{
+            li{
+                font-size: 18px;
+            }
+        }
+        .pExpo{
+            font-size: 18px;
+        }
+    }
+
+    .divPinturas{
+        flex-direction: column;
+        .PrimerasPinturas{
+            width: 90%;
+            animation: none;
+        }
+    }
+
+    .tituloPinturas{
+        font-size: medium;
+        margin-bottom: 1rem;
+    }
+
+    .mainCuentos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .primerosCuentos{
+        max-width: 90%;
+        min-width: 90%;
+        max-height: 600px;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border: solid 1px grey;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-decoration: none;
+        color: black;
+        transition-duration: 0.25s;
+        border-radius: 4px;
+        margin-bottom: 4rem;
+        animation: none;
+    }
+       
+    .pCuento{
+        border-top: solid 1px black;
+        padding-top: 15px;
+        margin-top: 5px;
+        text-align: center;
+        font-size: small;
+    }
+    
+    .imgCuento1{
+        width: 165px;
+        max-height: 250px;
+        min-height: 250px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .divExposicion{
+        flex-direction: column;
+        .ulExpo{
+            width: 90%;
+            font-size: 30px;
+            li{
+                font-size: 20px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+.body{
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
+    min-height: 100vh;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header"
+        "main main main main main"
+        "main main main main main"
+        "main main main main main"
+        "footer footer footer footer footer";
+}
+
+.mainSecciones{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 40px;
+    font-family: $fuente1;
+}
+
+h2{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 35px;
+    font-family: $fuente1;
+}
+
+p{
+    font-family: $fuente1;
+}
+
+li{
+    font-family: $fuente1;
+}

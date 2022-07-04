@@ -1,0 +1,12 @@
+.divPinturas{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    .PrimerasPinturas{
+        width: 45%;
+        margin: 1rem 0.5rem;
+        animation-duration: 0.75s;
+    }
+}

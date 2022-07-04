@@ -1,0 +1,51 @@
+.header {
+    grid-area: header;
+    background-color: #7c7c7c;
+
+    .divHeader{
+        display: flex;
+        background-color: #ececec;
+        justify-content: space-between;
+        box-shadow: 0 1px 10px grey;
+        position: relative;
+        align-items: center;
+    }
+    
+    .imgLogo {
+        width: 170px;
+        height: 90px;
+        margin-left: 25px;
+    }
+    
+    .menuPrincipal {
+        display: flex;
+        align-items: center;
+        font-family: 'Volkhov', serif;
+        color: black;
+        justify-content: space-between;
+    
+        a{
+            padding: 0px 30px;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+    
+    .menuDesplegable{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.5rem;
+    
+        .menuItem{
+            text-decoration: none;
+            color: black;
+            padding: 25px 0;
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            text-align: center;
+            font-family: sans-serif;
+        }
+    }
+    
+}

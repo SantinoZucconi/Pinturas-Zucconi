@@ -1,0 +1,60 @@
+@import "../variables/extend";
+
+.divBiografia1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid grey;
+
+    .imgBio1{
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+    }
+
+    .pBio1{
+        display: flex;
+        width: 600px;
+        align-items: center;
+        text-align: justify;
+        font-size: 30px;
+        font-style: oblique;
+    }
+}
+
+.divBiografia2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+    align-content: center;
+
+    .divExpo{
+
+        @extend %estilosParrafos;
+
+        p{
+            margin: 1rem 0;
+            @include fuenteParrafo($fuente1, black);
+        }
+    }
+
+    .imgExpo{
+        width: 90vw;
+        margin: 3rem 0;
+    }
+    
+    .exposiciones{
+        margin-bottom: 2rem;
+    }
+
+    .pExpo{
+        font-size: 25px;
+    }
+}
+
+
