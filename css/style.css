@@ -417,4 +417,8 @@ li {
       width: 90%;
       font-size: 30px; }
       .divExposicion .ulExpo li {
-        font-size: 20px; } }
+        font-size: 20px; }
+  .Contacto .formItem {
+    width: 80%; }
+  .Contacto div input {
+    width: 100px; } }
